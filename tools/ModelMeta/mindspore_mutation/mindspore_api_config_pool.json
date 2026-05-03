@@ -1,0 +1,553 @@
+{
+  "Conv1D": {
+    "in_channels":[0],
+    "out_channels":[0],
+    "kernel_size":[0],
+    "stride":[0],
+    "padding":[0],
+    "pad_mode": ["same", "valid","pad"],
+    "dilation":[0],
+    "groups":[0],
+    "has_bias": [true, false]
+  },
+  "Conv2D": {
+    "in_channels":[0],
+    "out_channels":[0],
+    "kernel_size":[0],
+    "stride":[0],
+    "padding":[0],
+    "pad_mode": ["same", "valid","pad"],
+    "dilation":[0],
+    "groups":[0],
+    "has_bias": [true, false],
+    "data_format": ["NCHW", "NHWC"]
+  },
+  "Conv3D": {
+    "in_channels":[0],
+    "out_channels":[0],
+    "kernel_size":[0],
+    "stride":[0],
+    "padding":[0],
+    "pad_mode": ["same", "valid","pad"],
+    "dilation":[0],
+    "groups":[0],
+    "has_bias": [true, false],
+    "data_format": ["NCDHW"]
+  },
+  "CrossEntropyLoss": {
+        "weight":[0],
+        "size_average":[true, false],
+        "ignore_index" :[0],
+        "reduce" : [true, false],
+        "reduction": ["none","mean","sum","none"],
+        "label_smoothing":[0]
+  },
+  "Conv1dTranspose": {
+    "in_channels":[0],
+    "out_channels":[0],
+    "kernel_size":[0],
+    "stride":[0],
+    "padding":[0],
+    "output_padding": [0],
+    "pad_mode": ["same", "valid","pad"],
+    "dilation":[0],
+    "groups":[0],
+    "has_bias": [true, false]
+  },
+  "Conv2dTranspose": {
+    "in_channels":[0],
+    "out_channels":[0],
+    "kernel_size":[0],
+    "stride":[0],
+    "padding":[0],
+    "output_padding": [0],
+    "pad_mode": ["same", "valid","pad"],
+    "dilation":[0],
+    "groups":[0],
+    "has_bias": [true, false]
+  },
+  "Conv3dTranspose": {
+    "in_channels":[0],
+    "out_channels":[0],
+    "kernel_size":[0],
+    "stride":[0],
+    "padding":[0],
+    "output_padding": [0],
+    "pad_mode": ["same", "valid","pad"],
+    "dilation":[0],
+    "groups":[0],
+    "has_bias": [true, false]
+  },
+  "MaxPool1d": {
+    "kernel_size": [0],
+    "stride": [0],
+    "padding": [0],
+    "dilation": [0],
+    "return_indices":[true, false],
+    "pad_mode": ["same", "valid","pad"],
+    "ceil_mode": [true, false]
+  },
+  "MaxPool2d": {
+    "kernel_size": [0],
+    "stride": [0],
+    "padding": [0],
+    "dilation": [0],
+    "return_indices":[true, false],
+    "pad_mode": ["same", "valid","pad"],
+    "ceil_mode": [true, false]
+  },
+  "MaxPool3d": {
+    "kernel_size": [0],
+    "stride": [0],
+    "padding": [0],
+    "dilation": [0],
+    "return_indices":[true, false],
+    "pad_mode": ["same", "valid","pad"],
+    "ceil_mode": [true, false]
+  },
+  "MaxUnpool1d": {
+    "kernel_size": [0],
+    "stride": [0],
+    "padding": [0]
+  },
+  "MaxUnpool2d": {
+    "kernel_size": [0],
+    "stride": [0],
+    "padding": [0]
+  },
+  "MaxUnpool3d": {
+    "kernel_size": [0],
+    "stride": [0],
+    "padding": [0]
+  },
+  "AvgPool1d": {
+    "kernel_size": [0],
+    "stride": [0],
+    "padding": [0],
+    "count_include_pad":[true, false],
+    "pad_mode": ["same", "valid","pad"],
+    "ceil_mode": [true, false]
+  },
+  "AvgPool2d": {
+    "kernel_size": [0],
+    "stride": [0],
+    "padding": [0],
+    "count_include_pad":[true, false],
+    "pad_mode": ["same", "valid","pad"],
+    "ceil_mode": [true, false]
+  },
+  "AvgPool3d": {
+    "kernel_size": [0],
+    "stride": [0],
+    "padding": [0],
+    "count_include_pad":[true, false],
+    "pad_mode": ["same", "valid","pad"],
+    "ceil_mode": [true, false]
+  },
+  "FractionalMaxPool2d": {
+    "kernel_size": [0],
+    "return_indices": [true, false],
+    "output_size": [0],
+    "output_ratio": [0]
+  },
+  "FractionalMaxPool3d": {
+    "kernel_size": [0],
+    "return_indices": [true, false],
+    "output_size": [0],
+    "output_ratio": [0]
+  },
+  "LPPool1d": {
+    "norm_type": [0],
+    "kernel_size": [0],
+    "stride": [0],
+    "ceil_mode": [true, false]
+  },
+  "LPPool2d": {
+    "norm_type": [0],
+    "kernel_size": [0],
+    "stride": [0],
+    "ceil_mode": [true, false]
+  },
+  "AdaptiveMaxPool1d": {
+    "output_size": [0]
+  },
+  "AdaptiveMaxPool2d": {
+    "output_size": [0],
+    "return_indices": [true, false]
+  },
+  "AdaptiveMaxPool3d": {
+    "output_size": [0],
+    "return_indices": [true, false]
+  },
+  "AdaptiveAvgPool1d": {
+    "output_size": [0]
+  },
+  "AdaptiveAvgPool2d": {
+    "output_size": [0]
+  },
+  "AdaptiveAvgPool3d": {
+    "output_size": [0]
+  },
+  "interpolate": {
+    "size": [0],
+    "input": [0],
+    "mode": ["nearest","linear","bilinear","bicubic","trilinear","area","nearest-exact"],
+    "scale_factor": [0],
+    "align_corners":[true, false],
+    "recompute_scale_factor": [true, false]
+  },
+  "LSTM": {
+        "input_size": [0],
+        "hidden_size":[0],
+        "num_layers":[0],
+        "has_bias":[true, false],
+        "batch_first":[true, false],
+        "dropout": [0],
+        "bidirectional":[true, false]
+},
+  "GRU": {
+        "input_size": [0],
+        "hidden_size":[0],
+        "num_layers":[0],
+        "has_bias":[true, false],
+        "batch_first":[true, false],
+        "dropout": [0],
+        "bidirectional":[true, false]
+  },
+  "RNN": {
+        "input_size": [0],
+        "hidden_size":[0],
+        "num_layers":[0],
+        "nonlinearity": ["tanh", "relu"],
+        "has_bias":[true, false],
+        "batch_first":[true, false],
+        "dropout": [0],
+        "bidirectional":[true, false]
+  },
+  "Fold": {
+    "output_size": [0],
+    "kernel_size":[0],
+    "dilation": [0],
+    "padding":[0],
+    "stride": [0]
+  },
+  "UnFold": {
+    "kernel_size":[0],
+    "strides": [0],
+    "padding":["same", "valid"],
+    "rates": [0]
+  },
+  "BatchNorm1d": {
+    "num_features":[0],
+    "eps":[0],
+    "momentum":[0],
+    "gamma_init":["zeros", "ones"],
+    "beta_init":["zeros", "ones"],
+    "moving_mean_init":["zeros", "ones"],
+    "moving_var_init":["zeros", "ones"],
+    "use_batch_statistics":[true, false],
+    "data_format": ["NCHW", "NHWC"]
+  },
+  "BatchNorm2d": {
+    "num_features":[0],
+    "eps":[0],
+    "momentum":[0],
+    "affine":[true, false],
+    "gamma_init":["zeros", "ones"],
+    "beta_init":["zeros", "ones"],
+    "moving_mean_init":["zeros", "ones"],
+    "moving_var_init":["zeros", "ones"],
+    "use_batch_statistics":[true, false],
+    "data_format": ["NCHW", "NHWC"]
+  },
+  "BatchNorm3d": {
+    "num_features":[0],
+    "eps":[0],
+    "momentum":[0],
+    "affine":[true, false],
+    "gamma_init":["zeros", "ones"],
+    "beta_init":["zeros", "ones"],
+    "moving_mean_init":["zeros", "ones"],
+    "moving_var_init":["zeros", "ones"],
+    "use_batch_statistics":[true, false]
+  },
+  "LayerNorm": {
+    "epsilon":[0],
+    "begin_norm_axis":[0],
+    "begin_params_axis":[0],
+    "normalized_shape":[0],
+    "gamma_init":["zeros", "ones"],
+    "beta_init":["zeros", "ones"]
+  },
+  "SyncBatchNorm": {
+    "num_features":[0],
+    "eps":[0],
+    "momentum":[0],
+    "affine":[true, false],
+    "gamma_init":["zeros", "ones"],
+    "beta_init":["zeros", "ones"],
+    "moving_mean_init":["zeros", "ones"],
+    "moving_var_init":["zeros", "ones"],
+    "use_batch_statistics":[true, false],
+    "data_format": ["NCHW", "NHWC"]
+  },
+  "GroupNorm": {
+    "eps":[0],
+    "num_groups":[0],
+    "num_channels":[0],
+    "affine":[true, false],
+    "gamma_init":["zeros", "ones"],
+    "beta_init":["zeros", "ones"]
+  },
+    "InstanceNorm1d": {
+    "eps":[0],
+    "num_features":[0],
+    "momentum":[0],
+    "affine":[true, false],
+    "gamma_init":["zeros", "ones"],
+    "beta_init":["zeros", "ones"]
+  },
+    "InstanceNorm2d": {
+    "eps":[0],
+    "num_features":[0],
+    "momentum":[0],
+    "affine":[true, false],
+    "gamma_init":["zeros", "ones"],
+    "beta_init":["zeros", "ones"]
+  },
+    "InstanceNorm3d": {
+    "eps":[0],
+    "num_features":[0],
+    "momentum":[0],
+    "affine":[true, false],
+    "gamma_init":["zeros", "ones"],
+    "beta_init":["zeros", "ones"]
+  },
+  "Dropout": {
+    "p":[0],
+    "keep_prob":[0]
+  },
+  "Dropout1d": {
+    "p":[0]
+  },
+  "Dropout2d": {
+    "p":[0]
+  },
+  "Dropout3d": {
+    "p":[0]
+  },
+  "Pad": {
+        "paddings":[0],
+    "mode":["CONSTANT", "REFLECT", "SYMMETRIC"]
+  },
+    "Norm": {
+
+  },
+  "RepeatVector": {
+    "n": [0]
+  },
+  "Permute": {},
+  "Cropping1D": {
+    "cropping": [0]
+  },
+  "Cropping2D": {
+    "cropping": [0]
+  },
+  "Cropping3D": {
+    "cropping": [0]
+  },
+  "Upsample": {
+
+  },
+
+  "ZeroPad2d": {
+    "padding": [0]
+  },
+    "ConstantPad1d": {
+    "padding": [0]
+  },
+  "ConstantPad2d": {
+    "padding": [0]
+  },
+  "ConstantPad3d": {
+    "padding": [0]
+  },
+  "ReflectionPad1d": {
+    "padding": [0]
+  },
+  "ReflectionPad2d": {
+    "padding": [0]
+  },
+  "ReflectionPad3d": {
+    "padding": [0]
+  },
+  "ReplicationPad1d": {
+    "padding": [0]
+  },
+  "ReplicationPad2d": {
+    "padding": [0]
+  },
+  "ReplicationPad3d": {
+    "padding": [0]
+  },
+  "Concat": {
+    "axis": [-1, -2]
+  },
+  "Average": {},
+  "Max": {
+    "input":[0],
+    "axis":[0],
+    "keepdim": [true, false]
+  },
+  "min": {
+    "input":[0],
+    "axis":[0],
+    "keepdim": [true, false]
+  },
+  "mean": {
+    "input":[0],
+    "axis":[0],
+    "keepdim": [true, false]
+  },
+  "argmax": {
+    "input":[0],
+    "dim":[0],
+    "keepdim": [true, false]
+  },
+    "aminmax": {
+    "input":[0]
+  },
+  "clamp": {
+    "input":[0],
+    "min":[0],
+    "max": [0]
+  },
+  "sum": {
+    "input":[0],
+    "dim":[0],
+    "keepdim": [true, false]
+  },
+  "Embedding": {
+    "num_embeddings":[0],
+    "embedding_dim":[0],
+    "padding_idx": [0],
+    "max_norm":[0],
+    "norm_type": [0],
+    "scale_grad_by_freq": [true, false],
+    "sparse": [true, false]
+  },
+  "cat": {
+    "tensors":[0],
+    "dim":[0]
+  },
+  "maximum": {
+    "x":[0],
+    "y":[0]
+  },
+  "minimum": {
+    "x":[0],
+    "y":[0]
+  },
+  "add": {"input":[0]},
+  "sub": {"input":[0]},
+  "mul": {"input":[0]},
+  "exp": {"input":[0]},
+  "squeeze": {
+    "input":[0],
+    "axis": [0]
+  },
+  "tile": {
+    "input":[0],
+    "multiples": [0]
+  },
+    "div": {
+    "input":[0]
+  },
+  "reshape": {
+    "input":[0],
+    "shape": [0]
+  },
+  "unsqueeze": {
+    "input":[0],
+    "dim": [0]
+  },
+  "dot": {
+    "input":[0]
+  },
+    "tanh": {
+    "input":[0]
+  },
+  "sin": {
+    "input":[0]
+  },
+  "cos": {
+    "input":[0]
+  },
+  "ReLU": {"inplace":[true, false]},
+  "Sigmoid": {},
+  "Softmax": {
+    "dim":[0]
+  },
+  "Parameter": {
+    "data":[0],
+    "requires_grad":[true, false]
+  },
+  "LinearLR": {
+    "start_factor": [0],
+    "end_factor":  [0],
+    "total_iters": [0],
+    "last_epoch":  [0],
+    "verbose": [true, false]
+  },
+  "Flatten": {
+    "start_dim": [0],
+    "end_dim": [0]
+  },
+    "Unflatten": {
+    "start_dim": [0],
+    "end_dim": [0]
+  },
+  "LeakyReLU": {
+    "alpha": [0]
+  },
+  "PReLU": {
+    "lower": [0],
+    "upper": [0]
+  },
+  "RReLU": {
+    "lower": [0],
+    "upper": [0]
+  },
+  "ELU": {
+    "alpha": [0]
+  },
+  "Threshold": {
+        "threshold":[0],
+        "value":[0],
+        "inplace":[true, false]
+  },
+  "Hardtanh": {
+    "min_val": [0],
+    "max_val": [0]
+  },
+  "ReLU6": {
+    "inplace": [true, false]
+  },
+  "ConCat": {
+    "axis": [0]
+  },
+  "Reshape": {
+  },
+  "Cell": {
+    "in_shape": [0],
+    "output_shape": [0]
+  },
+  "repeat": {
+    "repeats":[0],
+    "axis":[0]
+  },
+  "Replace": {
+    "in_shape": [0],
+    "output_shape": [0]
+  }
+}

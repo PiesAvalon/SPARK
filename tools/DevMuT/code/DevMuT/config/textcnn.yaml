@@ -1,0 +1,22 @@
+train_config:
+  model_name: "textcnn"
+  dataset_name: "rtpolarity"
+  batch_size: 32
+  input_size: ['(2,51)']
+  dtypes: ['int']
+  epoch: 2
+  test_size: 2
+  loss_name: "textcnnloss"
+  optimizer: "SGD"
+  learning_rate: 0.02
+  loss_ground_truth : 2.950969386100769
+  eval_ground_truth : 0.998740881321355
+  memory_threshold : 1e-2
+
+
+mutation_config:
+  mutation_iterations : 20
+  save_iterations: 1
+  mutation_eval_metric : "origin_diff"
+  validation_threshold: 0.5
+  output_difference_metric : "DMAD"

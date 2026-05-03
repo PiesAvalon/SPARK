@@ -1,0 +1,3 @@
+config:
+  yaml_path: /home/cvgroup/myz/czx/semtest-gitee/modelmeta/configs/rq3_MRs/openpose_False.yaml
+  csv_path: /home/cvgroup/myz/czx/semtest-gitee/modelmeta/0,1,2,3_openpose_False.csv

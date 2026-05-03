@@ -1,0 +1,23 @@
+train_config:
+  model_name: "unetplus"
+  dataset_name: "ischanllgeplus"
+  batch_size: 1
+  input_size: ['(1,1,96,96)']
+  epoch: 2
+  test_size: 1
+  dtypes: ['float']
+  backbone_location: "None"
+  loss_name: "unetloss"
+  optimizer: "SGD"
+  learning_rate: 0.02
+  loss_ground_truth : 2.950969386100769
+  eval_ground_truth : 0.998740881321355
+  memory_threshold : 1e-2
+
+
+mutation_config:
+  mutation_iterations : 20
+  save_iterations: 1
+  mutation_eval_metric : "origin_diff"
+  validation_threshold: 0.5
+  output_difference_metric : "DMAD"

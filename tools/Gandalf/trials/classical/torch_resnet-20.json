@@ -1,0 +1,104 @@
+{
+  "name": "ResNet20",
+  "framework": "PyTorch",
+  "input_shape": [32, 32, 3],
+  "network": [
+    {
+      "name": "Conv2d",
+      "params": {"in_channels": 3, "out_channels": 16, "kernel_size": 3, "stride": 1, "padding": "same"}
+    },
+    {
+      "name": "BatchNorm2d",
+      "params": {"num_features": 16}
+    },
+    {
+      "name": "ReLU",
+      "branch_to": "residual_add_1"
+    },
+
+    {
+      "name": "Conv2d",
+      "params": {"in_channels": 16, "out_channels": 16, "kernel_size": 3, "padding": "same"}
+    },
+    {
+      "name": "BatchNorm2d",
+      "params": {"num_features": 16}
+    },
+    {
+      "name": "ReLU"
+    },
+    {
+      "name": "Conv2d",
+      "params": {"in_channels": 16, "out_channels": 16, "kernel_size": 3, "padding": "same"}
+    },
+    {
+      "name": "BatchNorm2d",
+      "params": {"num_features": 16}
+    },
+    {
+      "name": "ReLU",
+      "index": "residual_add_1",
+      "branch_to": "residual_add_2"
+    },
+
+    {
+      "name": "Conv2d",
+      "params": {"in_channels": 16, "out_channels": 32, "kernel_size": 3, "stride": 2, "padding": "same"}
+    },
+    {
+      "name": "BatchNorm2d",
+      "params": {"num_features": 32}
+    },
+    {
+      "name": "ReLU"
+    },
+    {
+      "name": "Conv2d",
+      "params": {"in_channels": 32, "out_channels": 32, "kernel_size": 3, "padding": "same"}
+    },
+    {
+      "name": "BatchNorm2d",
+      "params": {"num_features": 32}
+    },
+    {
+      "name": "ReLU",
+      "index": "residual_add_2",
+      "branch_to": "residual_add_3"
+    },
+
+    {
+      "name": "Conv2d",
+      "params": {"in_channels": 32, "out_channels": 64, "kernel_size": 3, "stride": 2, "padding": "same"}
+    },
+    {
+      "name": "BatchNorm2d",
+      "params": {"num_features": 64}
+    },
+    {
+      "name": "ReLU"
+    },
+    {
+      "name": "Conv2d",
+      "params": {"in_channels": 64, "out_channels": 64, "kernel_size": 3, "padding": "same"}
+    },
+    {
+      "name": "BatchNorm2d",
+      "params": {"num_features": 64}
+    },
+    {
+      "name": "ReLU",
+      "index": "residual_add_3"
+    },
+
+    {
+      "name": "GlobalAvgPool2d"
+    },
+    {
+      "name": "Dense",
+      "params": {"in_features": 64, "out_features": 10}
+    },
+    {
+      "name": "Softmax"
+    }
+  ]
+}

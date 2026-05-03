@@ -1,0 +1,582 @@
+{
+  "Conv1D": {
+    "in_channels":[0],
+    "out_channels":[0],
+    "kernel_size":[0],
+    "stride":[0],
+    "padding":[0],
+    "padding_mode": ["zeros", "reflect","replicate" , "circular"],
+    "dilation":[0],
+    "groups":[0],
+    "bias": [true, false]
+  },
+  "Conv2D": {
+    "in_channels":[0],
+    "out_channels":[0],
+    "kernel_size":[0],
+    "stride":[0],
+    "padding":[0],
+    "padding_mode": ["zeros", "reflect","replicate" , "circular"],
+    "dilation":[0],
+    "groups":[0],
+    "bias": [true, false]
+  },
+  "Conv3D": {
+    "in_channels":[0],
+    "out_channels":[0],
+    "kernel_size":[0],
+    "stride":[0],
+    "padding":[0],
+    "padding_mode": ["zeros", "reflect","replicate" , "circular"],
+    "dilation":[0],
+    "groups":[0],
+    "bias": [true, false]
+  },
+  "CrossEntropyLoss": {
+        "weight":[0],
+        "size_average":[true, false],
+        "ignore_index" :[0],
+        "reduce" : [true, false],
+        "reduction": ["none","mean","sum","none"],
+        "label_smoothing":[0]
+  },
+  "ConvTranspose1d": {
+    "in_channels":[0],
+    "out_channels":[0],
+    "kernel_size":[0],
+    "stride":[0],
+    "padding":[0],
+    "output_padding": [0],
+    "padding_mode": ["zeros", "reflect","replicate" , "circular"],
+    "dilation":[0],
+    "groups":[0],
+    "bias": [true, false]
+  },
+  "ConvTranspose2d": {
+    "in_channels":[0],
+    "out_channels":[0],
+    "kernel_size":[0],
+    "stride":[0],
+    "padding":[0],
+    "output_padding": [0],
+    "padding_mode": ["zeros", "reflect","replicate" , "circular"],
+    "dilation":[0],
+    "groups":[0],
+    "bias": [true, false]
+  },
+  "ConvTranspose3d": {
+    "in_channels":[0],
+    "out_channels":[0],
+    "kernel_size":[0],
+    "stride":[0],
+    "padding":[0],
+    "output_padding": [0],
+    "padding_mode": ["zeros", "reflect","replicate" , "circular"],
+    "dilation":[0],
+    "groups":[0],
+    "bias": [true, false]
+  },
+  "LazyConv1d": {
+    "out_channels":[0],
+    "kernel_size":[0],
+    "stride":[0],
+    "padding":[0],
+    "padding_mode": ["zeros", "reflect","replicate" , "circular"],
+    "dilation":[0],
+    "groups":[0],
+    "bias": [true, false]
+  },
+  "LazyConv2d": {
+    "out_channels":[0],
+    "kernel_size":[0],
+    "stride":[0],
+    "padding":[0],
+    "padding_mode": ["zeros", "reflect","replicate" , "circular"],
+    "dilation":[0],
+    "groups":[0],
+    "bias": [true, false]
+  },
+  "LazyConv3d": {
+    "out_channels":[0],
+    "kernel_size":[0],
+    "stride":[0],
+    "padding":[0],
+    "padding_mode": ["zeros", "reflect","replicate" , "circular"],
+    "dilation":[0],
+    "groups":[0],
+    "bias": [true, false]
+  },
+  "LazyConvTranspose1d": {
+    "out_channels":[0],
+    "kernel_size":[0],
+    "stride":[0],
+    "padding":[0],
+    "output_padding": [0],
+    "padding_mode": ["zeros", "reflect","replicate" , "circular"],
+    "dilation":[0],
+    "groups":[0],
+    "bias": [true, false]
+  },
+  "LazyConvTranspose2d": {
+    "out_channels":[0],
+    "kernel_size":[0],
+    "stride":[0],
+    "padding":[0],
+    "output_padding": [0],
+    "padding_mode": ["zeros", "reflect","replicate" , "circular"],
+    "dilation":[0],
+    "groups":[0],
+    "bias": [true, false]
+  },
+  "LazyConvTranspose3d": {
+    "out_channels":[0],
+    "kernel_size":[0],
+    "stride":[0],
+    "padding":[0],
+    "output_padding": [0],
+    "padding_mode": ["zeros", "reflect","replicate" , "circular"],
+    "dilation":[0],
+    "groups":[0],
+    "bias": [true, false]
+  },
+  "MaxPool1d": {
+    "kernel_size": [0],
+    "stride": [0],
+    "padding": [0],
+    "dilation": [0],
+    "return_indices":[true, false],
+    "ceil_mode": [true, false]
+  },
+  "MaxPool2d": {
+    "kernel_size": [0],
+    "stride": [0],
+    "padding": [0],
+    "dilation": [0],
+    "return_indices":[true, false],
+    "ceil_mode": [true, false]
+  },
+  "MaxPool3d": {
+    "kernel_size": [0],
+    "stride": [0],
+    "padding": [0],
+    "dilation": [0],
+    "return_indices":[true, false],
+    "ceil_mode": [true, false]
+  },
+  "MaxUnpool1d": {
+    "kernel_size": [0],
+    "stride": [0],
+    "padding": [0]
+  },
+  "MaxUnpool2d": {
+    "kernel_size": [0],
+    "stride": [0],
+    "padding": [0]
+  },
+  "MaxUnpool3d": {
+    "kernel_size": [0],
+    "stride": [0],
+    "padding": [0]
+  },
+  "AvgPool1d": {
+    "kernel_size": [0],
+    "stride": [0],
+    "padding": [0],
+    "count_include_pad":[true, false],
+    "ceil_mode": [true, false]
+  },
+  "AvgPool2d": {
+    "kernel_size": [0],
+    "stride": [0],
+    "padding": [0],
+    "count_include_pad":[true, false],
+    "ceil_mode": [true, false]
+  },
+  "AvgPool3d": {
+    "kernel_size": [0],
+    "stride": [0],
+    "padding": [0],
+    "count_include_pad":[true, false],
+    "ceil_mode": [true, false]
+  },
+  "FractionalMaxPool2d": {
+    "kernel_size": [0],
+    "return_indices": [true, false],
+    "output_size": [0],
+    "output_ratio": [0]
+  },
+  "FractionalMaxPool3d": {
+    "kernel_size": [0],
+    "return_indices": [true, false],
+    "output_size": [0],
+    "output_ratio": [0]
+  },
+  "LPPool1d": {
+    "kernel_size": [0],
+    "stride": [0],
+    "ceil_mode": [true, false]
+  },
+  "LPPool2d": {
+    "kernel_size": [0],
+    "stride": [0],
+    "ceil_mode": [true, false]
+  },
+  "AdaptiveMaxPool1d": {
+    "output_size": [0],
+    "return_indices": [true, false]
+  },
+  "AdaptiveMaxPool2d": {
+    "output_size": [0],
+    "return_indices": [true, false]
+  },
+  "AdaptiveMaxPool3d": {
+    "output_size": [0],
+    "return_indices": [true, false]
+  },
+  "AdaptiveAvgPool1d": {
+    "output_size": [0]
+  },
+  "AdaptiveAvgPool2d": {
+    "output_size": [0]
+  },
+  "AdaptiveAvgPool3d": {
+    "output_size": [0]
+  },
+  "interpolate": {
+    "size": [0],
+    "input": [0],
+    "mode": ["nearest","linear","bilinear","bicubic","trilinear","area","nearest-exact"],
+    "scale_factor": [0],
+    "align_corners":[true, false],
+    "recompute_scale_factor": [true, false],
+    "antialias": [true, false]
+  },
+  "LSTM": {
+        "input_size": [0],
+        "hidden_size":[0],
+        "num_layers":[0],
+        "bias":[true, false],
+        "batch_first":[true, false],
+        "dropout": [0],
+        "bidirectional":[true, false],
+        "proj_size": [0]
+},
+  "GRU": {
+        "input_size": [0],
+        "hidden_size":[0],
+        "num_layers":[0],
+        "bias":[true, false],
+        "batch_first":[true, false],
+        "dropout": [0],
+        "bidirectional":[true, false]
+  },
+  "RNN": {
+        "input_size": [0],
+        "hidden_size":[0],
+        "num_layers":[0],
+        "bias":[true, false],
+        "batch_first":[true, false],
+        "dropout": [0],
+        "bidirectional":[true, false]
+  },
+  "Fold": {
+    "output_size": [0],
+    "kernel_size":[0],
+    "dilation": [0],
+    "padding":[0],
+    "stride": [0]
+  },
+  "UnFold": {
+    "kernel_size":[0],
+    "dilation": [0],
+    "padding":[0],
+    "stride": [0]
+  },
+  "BatchNorm1d": {
+    "num_features":[0],
+    "eps":[0],
+    "momentum":[0],
+    "affine":[true, false],
+    "track_running_stats":[true, false]
+  },
+  "BatchNorm2d": {
+    "num_features":[0],
+    "eps":[0],
+    "momentum":[0],
+    "affine":[true, false],
+    "track_running_stats":[true, false]
+  },
+  "BatchNorm3d": {
+    "num_features":[0],
+    "eps":[0],
+    "momentum":[0],
+    "affine":[true, false],
+    "track_running_stats":[true, false]
+  },
+  "LazyBatchNorm1d": {
+    "eps":[0],
+    "momentum":[0],
+    "affine":[true, false],
+    "track_running_stats":[true, false]
+  },
+  "LazyBatchNorm2d": {
+    "eps":[0],
+    "momentum":[0],
+    "affine":[true, false],
+    "track_running_stats":[true, false]
+  },
+  "LazyBatchNorm3d": {
+    "eps":[0],
+    "momentum":[0],
+    "affine":[true, false],
+    "track_running_stats":[true, false]
+  },
+  "SyncBatchNorm": {
+    "num_features":[0],
+    "eps":[0],
+    "momentum":[0],
+    "affine":[true, false],
+    "track_running_stats":[true, false]
+  },
+  "LayerNorm": {
+    "normalized_shape":[0],
+    "eps":[0],
+    "elementwise_affine":[true, false]
+  },
+  "LocalResponseNorm": {
+    "size":[0],
+    "alpha":[0],
+    "beta":[0],
+    "k":[0]
+  },
+  "CrossMapLRN2d": {
+    "size":[0],
+    "alpha":[0],
+    "beta":[0],
+    "k":[0]
+  },
+  "GroupNorm": {
+    "num_groups":[0],
+    "num_channels":[0],
+    "eps":[0],
+    "affine": [true, false]
+  },
+  "Dropout": {
+    "p":[0],
+    "inplace": [true, false]
+  },
+  "Dropout1d": {
+    "p":[0],
+    "inplace": [true, false]
+  },
+  "Dropout2d": {
+    "p":[0],
+    "inplace": [true, false]
+  },
+  "Dropout3d": {
+    "p":[0],
+    "inplace": [true, false]
+  },
+  "AlphaDropout": {
+    "p":[0],
+    "inplace": [true, false]
+  },
+  "FeatureAlphaDropout": {
+    "p":[0],
+    "inplace": [true, false]
+  },
+  "RepeatVector": {
+    "n": [0]
+  },
+  "Permute": {},
+  "Cropping1D": {
+    "cropping": [0]
+  },
+  "Cropping2D": {
+    "cropping": [0]
+  },
+  "Cropping3D": {
+    "cropping": [0]
+  },
+  "Upsample": {
+    "size": [0],
+    "scale_factor":[0],
+    "mode": ["nearest", "linear", "bilinear", "bicubic","trilinear"],
+    "align_corners":[true, false],
+    "recompute_scale_factor":[true, false]
+  },
+  "UpsamplingNearest2d": {
+    "size": [0],
+    "scale_factor":[0]
+  },
+  "UpsamplingBilinear2d": {
+    "size": [0],
+    "scale_factor":[0]
+  },
+  "ZeroPad1d": {
+    "padding": [0]
+  },
+  "ZeroPad2d": {
+    "padding": [0]
+  },
+  "ZeroPad3d": {
+    "padding": [0]
+  },
+    "ConstantPad1d": {
+    "padding": [0]
+  },
+  "ConstantPad2d": {
+    "padding": [0]
+  },
+  "ConstantPad3d": {
+    "padding": [0]
+  },
+  "ReflectionPad1d": {
+    "padding": [0]
+  },
+  "ReflectionPad2d": {
+    "padding": [0]
+  },
+  "ReflectionPad3d": {
+    "padding": [0]
+  },
+  "ReplicationPad1d": {
+    "padding": [0]
+  },
+  "ReplicationPad2d": {
+    "padding": [0]
+  },
+  "ReplicationPad3d": {
+    "padding": [0]
+  },
+  "Concatenate": {
+    "axis": [-1, -2]
+  },
+  "Average": {},
+  "Max": {
+    "input":[0],
+    "dim":[0],
+    "keepdim": [true, false]
+  },
+  "min": {
+    "input":[0],
+    "dim":[0],
+    "keepdim": [true, false]
+  },
+  "mean": {
+    "input":[0],
+    "dim":[0],
+    "keepdim": [true, false]
+  },
+  "argmax": {
+    "input":[0],
+    "dim":[0],
+    "keepdim": [true, false]
+  },
+  "clamp": {
+    "input":[0],
+    "min":[0],
+    "max": [0]
+  },
+  "sum": {
+    "input":[0],
+    "dim":[0],
+    "keepdim": [true, false]
+  },
+  "Embedding": {
+    "num_embeddings":[0],
+    "embedding_dim":[0],
+    "padding_idx": [0],
+    "max_norm":[0],
+    "norm_type": [0],
+    "scale_grad_by_freq": [true, false],
+    "sparse": [true, false]
+  },
+  "cat": {
+    "tensors":[0],
+    "dim":[0]
+  },
+  "maximum": {"input":[0]},
+  "minimum": {"input":[0]},
+  "add": {"input":[0]},
+  "sub": {"input":[0]},
+  "mul": {"input":[0]},
+  "exp": {"input":[0]},
+  "squeeze": {
+    "input":[0],
+    "dim": [0]
+  },
+  "tile": {
+    "input":[0],
+    "dim": [0]
+  },
+    "div": {
+    "input":[0],
+    "other": [0]
+  },
+  "reshape": {
+    "input":[0],
+    "shape": [0]
+  },
+  "unsqueeze": {
+    "input":[0],
+    "dim": [0]
+  },
+  "dot": {
+    "input":[0]
+  },
+    "tanh": {
+    "input":[0]
+  },
+  "sin": {
+    "input":[0]
+  },
+  "cos": {
+    "input":[0]
+  },
+  "ReLU": {"inplace":[true, false]},
+  "Sigmoid": {},
+  "Softmax": {
+    "dim":[0]
+  },
+  "Parameter": {
+    "data":[0],
+    "requires_grad":[true, false]
+  },
+  "Linear": {
+        "in_features": [0],
+        "out_features":  [0],
+    "bias": [true, false]
+  },
+  "Flatten": {
+    "start_dim": [0],
+    "end_dim": [0]
+  },
+  "LeakyReLU": {
+    "negative_slope": [0],
+    "inplace":[true, false]
+  },
+  "PReLU": {
+    "num_parameters": [0],
+    "init": [0]
+  },
+  "ELU": {
+    "alpha": [0],
+    "inplace":[true, false]
+  },
+  "Threshold": {
+        "threshold":[0],
+        "value":[0],
+        "inplace":[true, false]
+  },
+  "Hardsigmoid": {
+    "inplace": [true, false]
+  },
+  "ReLU6": {
+    "inplace": [true, false]
+  },
+  "Hardswish": {
+    "inplace": [true, false]
+  }
+
+}

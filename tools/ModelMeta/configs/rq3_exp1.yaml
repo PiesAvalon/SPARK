@@ -1,0 +1,20 @@
+
+execution_config:
+  seed_model: "resnet"
+  mutate_times: 100
+  ifeplison: 0.6
+  ifapimut: False
+  ifTompson: False # True
+  num_samples: 1
+  run_option: 0
+  MR: 0,1,2,3
+  num_quantiles: 20
+  device: -1
+
+train_config: 
+  loss_name: "CrossEntropy" # yolov4loss CrossEntropy unetloss textcnnloss ssdmultix yololoss
+  opt_name: "SGD" # adam
+  seed_model: "TextCNN" # 
+
+
+

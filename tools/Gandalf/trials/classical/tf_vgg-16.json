@@ -1,0 +1,94 @@
+{
+  "name": "VGG16",
+  "framework": "TensorFlow",
+  "input_shape": [32, 32, 3],
+  "network": [
+    {
+      "name": "Resize",
+      "params": {"output_shape": 224}
+    },
+    {
+      "name": "Conv2d",
+      "params": {"in_channels": 3, "out_channels": 64, "kernel_size": 3, "stride": 1, "padding": "same"}
+    },
+    {
+      "name": "Conv2d",
+      "params": {"in_channels": 64, "out_channels": 64, "kernel_size": 3, "stride": 1, "padding": "same"}
+    },
+    {
+      "name": "MaxPool2d",
+      "params": {"pool_size": 2, "stride": 2, "padding": "same"}
+    },
+
+    {
+      "name": "Conv2d",
+      "params": {"in_channels": 64, "out_channels": 128, "kernel_size": 3, "stride": 1, "padding": "same"}
+    },
+    {
+      "name": "Conv2d",
+      "params": {"in_channels": 128, "out_channels": 128, "kernel_size": 3, "stride": 1, "padding": "same"}
+    },
+    {
+      "name": "MaxPool2d",
+      "params": {"pool_size": 2, "stride": 2, "padding": "same"}
+    },
+
+    {
+      "name": "Conv2d",
+      "params": {"in_channels": 128, "out_channels": 256, "kernel_size": 3, "stride": 1, "padding": "same"}
+    },
+    {
+      "name": "Conv2d",
+      "params": {"in_channels": 256, "out_channels": 256, "kernel_size": 3, "stride": 1, "padding": "same"}
+    },
+    {
+      "name": "MaxPool2d",
+      "params": {"pool_size": 2, "stride": 2, "padding": "same"}
+    },
+
+    {
+      "name": "Conv2d",
+      "params": {"in_channels": 256, "out_channels": 512, "kernel_size": 3, "stride": 1, "padding": "same"}
+    },
+    {
+      "name": "Conv2d",
+      "params": {"in_channels": 512, "out_channels": 512, "kernel_size": 3, "stride": 1, "padding": "same"}
+    },
+    {
+      "name": "MaxPool2d",
+      "params": {"pool_size": 2, "stride": 2, "padding": "same"}
+    },
+
+    {
+      "name": "Conv2d",
+      "params": {"in_channels": 512, "out_channels": 512, "kernel_size": 3, "stride": 1, "padding": "same"}
+    },
+    {
+      "name": "Conv2d",
+      "params": {"in_channels": 512, "out_channels": 512, "kernel_size": 3, "stride": 1, "padding": "same"}
+    },
+    {
+      "name": "MaxPool2d",
+      "params": {"pool_size": 2, "stride": 2, "padding": "same"}
+    },
+
+    {
+      "name": "Flatten"
+    },
+    {
+      "name": "Dense",
+      "params": {"in_features": 25088, "out_features": 4096}
+    },
+    {
+      "name": "Dense",
+      "params": {"in_features": 4096, "out_features": 4096}
+    },
+    {
+      "name": "Dense",
+      "params": {"in_features": 4096, "out_features": 10}
+    },
+    {
+      "name": "Softmax"
+    }
+  ]
+}
