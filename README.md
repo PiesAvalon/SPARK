@@ -37,16 +37,16 @@ For each tool, each run generates 100 test cases and the generation process is r
 
 ## Results
 
-The current repository includes plotted results used in the paper:
+The current repository includes the result plots used in the paper:
 
-- `results/empirical_results/rq1.pdf`
-- `results/empirical_results/rq2.pdf`
-- `results/main_results/rq3/apfd.pdf`
-- `results/main_results/rq3/apfdc.pdf`
-- `results/main_results/rq4/curve.pdf`
-- `results/main_results/rq5/coverage.pdf`
-- `results/main_results/rq6/complexity_total.pdf`
-- `results/main_results/rq6/complexity_core.pdf`
+- `results/empirical_results/rq1.pdf` — empirical RQ1 results: APFD and Top-20% budget bug ratios for lightweight execution orders (Fig. 2).
+- `results/empirical_results/rq2.pdf` — empirical RQ2 results: APFD, Top-20% bugs, first-bug rank, and Spearman correlation for lightweight criteria (Fig. 3).
+- `results/main_results/rq3/apfd.pdf` — APFD distributions for SPARK and the internal baselines across the nine testing tools (Fig. 6).
+- `results/main_results/rq3/apfdc.pdf` — APFDc distributions for SPARK and the internal baselines across the nine testing tools (Fig. 7).
+- `results/main_results/rq4/curve.pdf` — cumulative bug-detection progress curves (Fig. 8).
+- `results/main_results/rq5/coverage.pdf` — OCS progression curves during execution (Fig. 9).
+- `results/main_results/rq6/complexity_total.pdf` — total prioritization runtime by method (Fig. 10a).
+- `results/main_results/rq6/complexity_core.pdf` — SPARK runtime decomposition (Fig. 10b).
 
 ## Setup
 

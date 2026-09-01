@@ -1,6 +1,5 @@
 # Project outputs
 artifact-results/
-results/
 
 # Local tooling
 .codex
