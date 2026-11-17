@@ -37,16 +37,10 @@ For each tool, each run generates 100 test cases and the generation process is r
 
 ## Results
 
-The current repository includes plotted results used in the paper:
+The [`results/`](results/) directory contains all **9 figures and 16 tables** from the paper, using the paper's current numbering and captions:
 
-- `results/empirical_results/rq1.pdf`
-- `results/empirical_results/rq2.pdf`
-- `results/main_results/rq3/apfd.pdf`
-- `results/main_results/rq3/apfdc.pdf`
-- `results/main_results/rq4/curve.pdf`
-- `results/main_results/rq5/coverage.pdf`
-- `results/main_results/rq6/complexity_total.pdf`
-- `results/main_results/rq6/complexity_core.pdf`
+- Figures: [fig1.pdf](results/fig1.pdf)–[fig9.pdf](results/fig9.pdf).
+- Tables: [table1.pdf](results/table1.pdf)–[table16.pdf](results/table16.pdf).
 
 ## Setup
 
